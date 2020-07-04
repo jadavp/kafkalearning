@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "CustomerAddress",
+  "namespace": "com.example",
+  "fields": [
+    {
+      "name": "address",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "record",
+  "namespace": "com.example",
+  "name": "Customer",
+  "fields": [
+    {"name": "first_name", "type": "string", "doc":  "This is first name of customer"},
+    {"name": "middle_name", "type": ["null","string"],"default" :  null},
+    {"name": "last_name", "type": "string"},
+    {"name": "age", "type": "int"},
+    {"name": "height", "type": "int"},
+    {"name": "weight", "type": "int"},
+    {"name": "automated_email", "type": "boolean", "default" :  true}
+  ]
+}

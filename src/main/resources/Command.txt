@@ -1,0 +1,4 @@
+//Command to run kafka Avro Utility:
+
+kafka-avro-console-producer --broker-list localhost:9092 --topic test-avro --property schema.registry.url=http://127.0.0.1:8081 --property value.schema='{"type": "record", "namespace" : "com.example", "name" : "CustomerAddress", "fields" : [{"name": "address", "type":  "string"} ] }'
+kafka-avro-console-consumer --topic test-avro --bootstrap-server localhost:9092 --property schema.registry.url=http://127.0.0.1:8081 --from-beginning
